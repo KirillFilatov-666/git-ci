@@ -1,0 +1,13 @@
+[ {
+  "values" : [ "main" ],
+  "name" : "Branch"
+}, {
+  "values" : [ "053ff0a3e7796f89d4f492e1ade955eccd130048" ],
+  "name" : "Commit"
+}, {
+  "values" : [ "chrome" ],
+  "name" : "Browser"
+}, {
+  "values" : [ "https://dev-crm.playground.com" ],
+  "name" : "Stage"
+} ]
