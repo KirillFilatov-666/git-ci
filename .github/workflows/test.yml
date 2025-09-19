@@ -65,8 +65,7 @@ jobs:
         env:
           BROWSER: ${{ inputs.BROWSER }}
           STAGE: ${{ secrets.STAGE }}
-        run: |
-          docker compose up tests
+        run: docker compose up --build --abort-on-container-exit tests
 
       # Шаг 4 - Копирование истории
       - name: Copy Allure history
