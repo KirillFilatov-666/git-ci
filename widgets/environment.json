@@ -2,12 +2,12 @@
   "values" : [ "main" ],
   "name" : "Branch"
 }, {
-  "values" : [ "053ff0a3e7796f89d4f492e1ade955eccd130048" ],
+  "values" : [ "601d3e4ff60b357e2b7f459754e3cd85b5283d44" ],
   "name" : "Commit"
 }, {
   "values" : [ "chrome" ],
   "name" : "Browser"
 }, {
-  "values" : [ "https://dev-crm.playground.com" ],
+  "values" : [ "https://habr.com/ru/articles/817555/" ],
   "name" : "Stage"
 } ]
