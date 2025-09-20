@@ -6,13 +6,14 @@ services:
       dockerfile: Dockerfile
     volumes:
       - ./:/usr/workspace
+      - ./allure-results:/usr/workspace/allure-results   # ✅ сохраняем результаты наружу
     environment:
       STAGE: ${STAGE}
       SUITE: ${SUITE:-regression}
       THREADS: ${THREADS:-5}
-    command: /bin/sh -c "STAGE=$$STAGE pytest -sv -o log_cli=true -n=$$THREADS -m=$$MARKER --alluredir=allure-results" # Команда для выполнения в контейнере
+    command: >
+      /bin/sh -c "STAGE=$$STAGE pytest -sv -o log_cli=true -n=$$THREADS -m=$$MARKER --alluredir=allure-results"
     tty: true
-
 
   report:
     image: ui:v1
@@ -21,5 +22,6 @@ services:
       dockerfile: Dockerfile
     volumes:
       - ./:/usr/workspace
-    command: /bin/sh -c "ls -la && allure generate allure-results --clean -o allure-report"
+    command: >
+      /bin/sh -c "ls -la allure-results && allure generate allure-results --clean -o allure-report"
     working_dir: /usr/workspace
