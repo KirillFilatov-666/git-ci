@@ -8,6 +8,6 @@
   "values" : [ "chrome" ],
   "name" : "Browser"
 }, {
-  "values" : [ "https://habr.com/ru/articles/817555/" ],
+  "values" : [ "https://oms.staging.starfish24.com/" ],
   "name" : "Stage"
 } ]
