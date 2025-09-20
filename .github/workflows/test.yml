@@ -41,6 +41,10 @@ jobs:
   ui-tests:
     runs-on: ubuntu-latest
     environment: ${{ inputs.ENV }}  # ✅ Привязка джоба к выбранному environment
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
 
     steps:
       # Клонируем репозиторий
@@ -90,7 +94,7 @@ jobs:
       - name: Deploy to Github Pages
         uses: JamesIves/github-pages-deploy-action@v4.6.8
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
           branch: gh-pages
           folder: allure-report
           clean: false
