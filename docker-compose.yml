@@ -12,7 +12,7 @@ services:
       SUITE: ${SUITE:-regression}
       THREADS: ${THREADS:-5}
     command: >
-      /bin/sh -c "STAGE=$$STAGE pytest -sv -o log_cli=true -n=$$THREADS -m=$$SUITE --alluredir=allure-results"
+      /bin/sh -c "mkdir -p allure-results && STAGE=$$STAGE pytest -sv -o log_cli=true -n=$$THREADS -m \"$$SUITE\" --alluredir=allure-results"
     tty: true
 
   report:
