@@ -1,13 +1,1 @@
-[ {
-  "values" : [ "main" ],
-  "name" : "Branch"
-}, {
-  "values" : [ "19953a29174bd5b6ba4e3d493ea3ee15c47f5f48" ],
-  "name" : "Commit"
-}, {
-  "values" : [ "chrome" ],
-  "name" : "Browser"
-}, {
-  "values" : [ "https://oms.staging.starfish24.com/" ],
-  "name" : "Stage"
-} ]
+[{"values":["main"],"name":"Branch"},{"values":["5e9ea5af788d822c299b03f2e7545eb4ec4baa80"],"name":"Commit"},{"values":["chrome"],"name":"Browser"},{"values":["https://oms.staging.starfish24.com/"],"name":"Stage"}]

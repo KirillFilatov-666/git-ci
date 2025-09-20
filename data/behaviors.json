@@ -1,5 +1,1 @@
-{
-  "uid" : "b1a8273437954620fa374b796ffaacdd",
-  "children" : [ ],
-  "name" : "behaviors"
-}
+{"uid":"b1a8273437954620fa374b796ffaacdd","children":[{"name":"Example","children":[{"name":"Example","children":[{"name":"Test Example 2","uid":"ba2e1d910de90a47","parentUid":"194366e41b5bc156288cc976205e5f88","status":"passed","time":{"start":1758405796039,"stop":1758405799304,"duration":3265},"flaky":false,"newFailed":false,"newPassed":false,"newBroken":false,"retriesCount":0,"retriesStatusChange":false,"parameters":[],"tags":["regression"]}],"uid":"194366e41b5bc156288cc976205e5f88"}],"uid":"edcc8f79425c3ceb04e1a57acd5799c7"}],"name":"behaviors"}

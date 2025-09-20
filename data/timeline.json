@@ -1,5 +1,1 @@
-{
-  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
-  "children" : [ ],
-  "name" : "timeline"
-}
+{"uid":"ab17fc5a4eb3bca4b216b548c7f9fcbc","children":[{"name":"0dcebe80f10d","children":[{"name":"8-MainThread","children":[{"name":"Test Example 2","uid":"ba2e1d910de90a47","parentUid":"09f77617485d74590bfe1b32eff4b26f","status":"passed","time":{"start":1758405796039,"stop":1758405799304,"duration":3265},"flaky":false,"newFailed":false,"newPassed":false,"newBroken":false,"retriesCount":0,"retriesStatusChange":false,"parameters":[],"tags":["regression"]}],"uid":"09f77617485d74590bfe1b32eff4b26f"}],"uid":"5a7d00646a5dcfc9296107a336e65d43"}],"name":"timeline"}

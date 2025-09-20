@@ -1,1 +1,1 @@
-{ }
+{"9ca033b82d8731833a604592d72d77b2":{"statistic":{"failed":0,"broken":0,"skipped":0,"passed":1,"unknown":0,"total":1},"items":[{"uid":"ba2e1d910de90a47","status":"passed","time":{"start":1758405796039,"stop":1758405799304,"duration":3265}}]}}
