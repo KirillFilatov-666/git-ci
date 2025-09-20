@@ -32,15 +32,3 @@ class TestExample:
                 name="Screenshot",
                 attachment_type=allure.attachment_type.PNG,
             )
-
-    @pytest.mark.smoke  
-    @pytest.mark.regression
-    @allure.title("Test Universal")
-    def test_universal(self):        # универсальный тест с обеими метками
-        with allure.step("Open page"):
-            self.driver.get(os.environ["STAGE"])
-            allure.attach(
-                self.driver.get_screenshot_as_png(),
-                name="Screenshot Universal",
-                attachment_type=allure.attachment_type.PNG,
-            )
