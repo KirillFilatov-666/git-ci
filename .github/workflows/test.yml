@@ -7,7 +7,7 @@ on:
       ENV:
         description: "Choose environment"
         required: true
-        type: environment # Важно: это тип environment!
+        type: environment # ? Важно: это тип environment!
 
       BROWSER:
         description: "Select the browser"
@@ -65,7 +65,8 @@ jobs:
         env:
           BROWSER: ${{ inputs.BROWSER }}
           STAGE: ${{ secrets.STAGE }}
-        run: docker compose up --build --abort-on-container-exit tests
+        run: |
+          docker compose up tests
 
       # Шаг 4 - Копирование истории
       - name: Copy Allure history
